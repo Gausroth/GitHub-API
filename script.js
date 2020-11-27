@@ -1,3 +1,8 @@
+function DarkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
+
 window.onload = function requestUserRepos() {
     var username = 'gausroth';
     // Create new XMLHttpRequest object
@@ -42,4 +47,5 @@ window.onload = function requestUserRepos() {
     }
     // Send the request to the server
     xhr.send();
+    DarkMode().call;
 }
